@@ -21,3 +21,34 @@
  'scheduler/enqueued/memory': 5727,
  'start_time': datetime.datetime(2017, 12, 20, 8, 55, 44, 788591)}
 2017-12-20 21:21:15 [scrapy.core.engine] INFO: Spider closed (finished)
+
+
+
+2017-12-22 15:11:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-12-22 15:11:26 [scrapy.extensions.feedexport] INFO: Stored json feed (206055 items) in: product2.json
+2017-12-22 15:11:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10130012,
+ 'downloader/request_count': 5730,
+ 'downloader/request_method_count/GET': 5730,
+ 'downloader/response_bytes': 3813078546,
+ 'downloader/response_count': 5730,
+ 'downloader/response_status_count/200': 5729,
+ 'downloader/response_status_count/508': 1,
+ 'dupefilter/filtered': 102338,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 12, 22, 7, 11, 26, 382355),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/508': 1,
+ 'item_scraped_count': 206055,
+ 'log_count/DEBUG': 217134,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 299,
+ 'request_depth_max': 14,
+ 'response_received_count': 5730,
+ 'scheduler/dequeued': 5730,
+ 'scheduler/dequeued/disk': 5730,
+ 'scheduler/enqueued': 5730,
+ 'scheduler/enqueued/disk': 5730,
+ 'spider_exceptions/IndexError': 2,
+ 'start_time': datetime.datetime(2017, 12, 22, 2, 21, 2, 298362)}
+2017-12-22 15:11:26 [scrapy.core.engine] INFO: Spider closed (finished)

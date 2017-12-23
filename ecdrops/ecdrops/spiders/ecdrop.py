@@ -52,7 +52,7 @@ class EcdropSpider(scrapy.Spider):
         	if next_page is not None:
         		yield response.follow(next_page, self.parseproduct)
 
-        sub_categories = response.xpath('//ul[@class="list-unstyled"]/li/a/@href').extract()
+        sub_categories = response.xpath('//ul[@class="list-unstyled"]/li[@class!="pitch"]/a/@href').extract()
         for sub_category in sub_categories:
             self.log('Found sub_category link: %s' % sub_category)
             yield Request(sub_category, callback = self.parseproduct)

@@ -8,8 +8,8 @@ from ecdrops.items import Ecdropsproduct
 
 class EcdropSpider(scrapy.Spider):
     name = 'ecdrop'
-    allowed_domains = ['ecdrops.se']
-    start_urls = ['http://ecdrops.se/']
+    allowed_domains = ['www.vvtrader.com']
+    start_urls = ['http://www.vvtrader.com/']
 
     def parse(self, response):
         #for sel in response.css('.text-left'):
@@ -43,11 +43,16 @@ class EcdropSpider(scrapy.Spider):
         	item['category']=response.css('h2.text-center::text').re(r'\n\s*(.*)\n')[0]
         	item['name']=sel.css('.product-name::text').re(r'(.*)\n\s*')[0]
         	item['price']=sel.css('.price-new::text').re(r'^\$\s(.*)')[0]
-        	item['weight']=sel.css('a::attr(title)').re(r'\((\d\.\d{2})\)')[0]
-        	item['size']=sel.css('option::attr(value)').extract()
+        	item['weight']=sel.css('a::attr(title)').re(r'\((.*)\)')[0]            
+        	item['size']=sel.css('.price-new::text').re(r'\n\s*Size:\s(.*)\n')[0]
         	item['img']=sel.css('a::attr(href)').extract_first()
         	yield item
 
         	next_page = response.xpath('//li/a[@rel="next"]/@href').extract_first()
         	if next_page is not None:
         		yield response.follow(next_page, self.parseproduct)
+
+        sub_categories = response.xpath('//ul[@class="list-unstyled"]/li/a/@href').extract()
+        for sub_category in sub_categories:
+            self.log('Found sub_category link: %s' % sub_category)
+            yield Request(sub_category, callback = self.parseproduct)

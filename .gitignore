@@ -1,42 +1,42 @@
-        #Sti_Trace.log#
-        .3T/
-        .anaconda/
-        .android/
-        .condarc
-        .dbshell
-        .dotnet/
-        .gitconfig
-        .idlerc/
-        .ipython/
-        .jupyter/
-        .minttyrc
-        .mongorc.js
-        .oracle_jre_usage/
-        3D Objects/
-        Anaconda3/
-        AppData/
-        Contacts/
-        Desktop/
-        Documents/
-        Downloads/
-        Favorites/
-        FunShion.ini
-        Funshion/
-        Links/
-        MicrosoftEdgeBackups/
-        Music/
-        NTUSER.DAT
-        NTUSER.DAT{46b13e24-db13-11e7-87c5-ff88d611cb30}.TM.blf
-        NTUSER.DAT{46b13e24-db13-11e7-87c5-ff88d611cb30}.TMContainer00000000000000000001.regtrans-ms
-        NTUSER.DAT{46b13e24-db13-11e7-87c5-ff88d611cb30}.TMContainer00000000000000000002.regtrans-ms
-        OneDrive/
-        Pictures/
-        Saved Games/
-        Searches/
-        Sti_Trace.log
-        Videos/
-        WebpageIcons.db
-        ntuser.dat.LOG1
-        ntuser.dat.LOG2
-        ntuser.ini
-        source/
+#Sti_Trace.log#
+.3T/
+.anaconda/
+.android/
+.condarc
+.dbshell
+.dotnet/
+.gitconfig
+.idlerc/
+.ipython/
+.jupyter/
+.minttyrc
+.mongorc.js
+.oracle_jre_usage/
+3D Objects/
+Anaconda3/
+AppData/
+Contacts/
+Desktop/
+Documents/
+Downloads/
+Favorites/
+FunShion.ini
+Funshion/
+Links/
+MicrosoftEdgeBackups/
+Music/
+NTUSER.DAT
+NTUSER.DAT{46b13e24-db13-11e7-87c5-ff88d611cb30}.TM.blf
+NTUSER.DAT{46b13e24-db13-11e7-87c5-ff88d611cb30}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{46b13e24-db13-11e7-87c5-ff88d611cb30}.TMContainer00000000000000000002.regtrans-ms
+OneDrive/
+Pictures/
+Saved Games/
+Searches/
+Sti_Trace.log
+Videos/
+WebpageIcons.db
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+source/
